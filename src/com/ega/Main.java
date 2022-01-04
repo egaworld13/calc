@@ -12,7 +12,7 @@ public class Main {
         int num1 = scanner.nextInt();
 
         //darbība
-        System.out.println("Ievadiet darbību:");
+        System.out.println("Ievadiet '/', '*', '+', '-'  darbību:");
         System.out.println("");
         String oper;
         scanner.nextLine();//nepieciešams,jo nextint nolasa string automātiski, bez ievades iespējas.
@@ -22,7 +22,7 @@ public class Main {
         //2. skaitlis
         System.out.println("Ievadiet 2. skaitli:");
 
-//        System.out.println("");
+        System.out.println("");
         int num2 = scanner.nextInt();
 
 
@@ -31,6 +31,7 @@ public class Main {
         if(oper.equals("+")) System.out.println(num1 + num2);
         if(oper.equals("-")) System.out.println(num1 - num2);
         if(oper.equals("*")) System.out.println(num1 * num2);
+        if(oper.equals("/")) System.out.println(num1 / num2);
         }
     }
 
