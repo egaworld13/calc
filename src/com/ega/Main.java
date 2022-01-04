@@ -4,28 +4,32 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int num1;
-        int num2;
-        int oper;
-
+        System.out.println("Ievadiet darbību:");
+        System.out.println("");
+        String oper;
+        oper = scanner.nextLine();
         //1. skaitlis
         System.out.println("Ievadiet 1. skaitli:");
 
         System.out.println("");
-        num1 = scanner.nextInt();
-        //darbība
-        System.out.println("Ievadiet darbību");
+        int num1 = scanner.nextInt();
 
-        System.out.println("");
-        oper = scanner.nextInt();
+        //darbība
+
 
 
         //2. skaitlis
         System.out.println("Ievadiet 2. skaitli:");
 
-        System.out.println("");
-        num2 = scanner.nextInt();
+//        System.out.println("");
+        int num2 = scanner.nextInt();
 
+
+
+        System.out.println("Rezultāts:");
+        if(oper.equals("+")) System.out.println(num1 + num2);
+        if(oper.equals("-")) System.out.println(num1 - num2);
+        if(oper.equals("*")) System.out.println(num1 * num2);
         }
     }
 
