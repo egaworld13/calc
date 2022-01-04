@@ -4,10 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ievadiet darbību:");
-        System.out.println("");
-        String oper;
-        oper = scanner.nextLine();
+
         //1. skaitlis
         System.out.println("Ievadiet 1. skaitli:");
 
@@ -15,7 +12,11 @@ public class Main {
         int num1 = scanner.nextInt();
 
         //darbība
-
+        System.out.println("Ievadiet darbību:");
+        System.out.println("");
+        String oper;
+        scanner.nextLine();//nepieciešams,jo nextint nolasa string automātiski, bez ievades iespējas.
+        oper = scanner.nextLine();
 
 
         //2. skaitlis
