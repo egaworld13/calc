@@ -8,10 +8,10 @@ public class Main {
 
        //1. skaitlis
        out.println("1. skaitlis:");
-        while (!sc.hasNextInt()) {
+        while (!sc.hasNextDouble()) {
             out.println("SKAITLI!!!:");
             sc.next();}
-        int num1 = sc.nextInt();
+        double num1 = sc.nextDouble();
 
         //darbība
         boolean darbiba = true;
@@ -26,11 +26,11 @@ public class Main {
         }
         //2. skaitlis
         out.println("2. skaitlis:");
-        while (!sc.hasNextInt()) {
+        while (!sc.hasNextDouble()) {
             out.println("Veselu skaitli!!!:");
             sc.next();
         }
-        int num2 = sc.nextInt();
+        double num2 = sc.nextDouble();
 
         out.println("Rezultāts:");
         switch (oper) {
